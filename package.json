@@ -1,0 +1,28 @@
+{
+  "name": "mern-todo-app",
+  "version": "1.0.0",
+  "description": "Simple TO-DO app where users of the app can add notes with dates. They can buy subscriptions. which can be approved by the Admin. Depending on the subscription packages the user can add more or fewer notes. There is also a free tier to create a limited amount of notes.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Mohaiminul Eraj",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.6",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "gravatar": "^1.8.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15"
+  }
+}
